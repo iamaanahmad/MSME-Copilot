@@ -1,0 +1,5 @@
+{
+  "name": "MSME Copilot",
+  "description": "Tracks GST/TDS deadlines, suggests government schemes, and provides AI-generated compliance checklists in local languages.",
+  "requestFramePermissions": []
+}
