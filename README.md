@@ -28,8 +28,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/msme-copilot.git
-   cd msme-copilot
+   git clone https://github.com/iamaanahmad/MSME-Copilot
+   cd MSME-Copilot
    ```
 
 2. **Install dependencies**
@@ -80,7 +80,7 @@ msme-copilot/
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/msme-copilot/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/iamiamaanahmad/MSME-Copilot/issues).
 
 ## 📄 License
 
