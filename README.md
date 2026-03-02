@@ -1,20 +1,87 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# MSME Copilot 🚀
 
-# Run and deploy your AI Studio app
+**MSME Copilot** is an AI-powered compliance and scheme assistant designed specifically for Indian Micro, Small, and Medium Enterprises (MSMEs). It helps business owners track critical deadlines, discover government schemes, and generate personalized compliance checklists in multiple local languages.
 
-This contains everything you need to run your app locally.
+## ✨ Features
 
-View your app in AI Studio: https://ai.studio/apps/e03fe4c4-6a14-4f8b-a086-28ab149c7bd2
+- **📅 Deadline Tracking**: Automatically tracks upcoming GST, TDS, PF, and ESI deadlines.
+- **🤖 AI Compliance Checklists**: Generates comprehensive, business-specific compliance checklists using Google's Gemini AI.
+- **🌐 Multilingual Support**: Access the dashboard and AI checklists in English, Hindi (हिंदी), Tamil (தமிழ்), and Urdu (اردو).
+- **🏛️ Government Schemes**: Suggests relevant government schemes (Mudra, MSME loans, subsidies) based on business profiles.
 
-## Run Locally
+## 🛠️ Tech Stack
 
-**Prerequisites:**  Node.js
+- **Frontend**: React 19, TypeScript, Vite
+- **Styling**: Tailwind CSS v4
+- **Icons**: Lucide React
+- **AI Integration**: Google GenAI SDK (`@google/genai`)
+- **Markdown Rendering**: React Markdown
 
+## 🚀 Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+
+- Node.js (v18 or higher)
+- A Google Gemini API Key
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/msme-copilot.git
+   cd msme-copilot
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+   Create a `.env` file in the root directory based on the provided `.env.example`:
+   ```bash
+   cp .env.example .env
+   ```
+   Open the `.env` file and add your Gemini API key:
+   ```env
+   GEMINI_API_KEY="your_actual_api_key_here"
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open the app**
+   Visit `http://localhost:3000` (or the port specified in your terminal) to view the application.
+
+## 📁 Project Structure
+
+```
+msme-copilot/
+├── src/
+│   ├── components/
+│   │   ├── Checklist.tsx    # AI Checklist generator
+│   │   ├── Dashboard.tsx    # Deadline tracking dashboard
+│   │   └── Schemes.tsx      # Government scheme suggestions
+│   ├── services/
+│   │   └── ai.ts            # Gemini API integration
+│   ├── App.tsx              # Main application layout
+│   ├── constants.ts         # Mock data and language constants
+│   ├── types.ts             # TypeScript interfaces
+│   ├── index.css            # Tailwind CSS entry point
+│   └── main.tsx             # React DOM entry point
+├── .env.example             # Environment variables template
+├── package.json             # Project dependencies
+├── tailwind.config.js       # Tailwind configuration
+├── tsconfig.json            # TypeScript configuration
+└── vite.config.ts           # Vite configuration
+```
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/msme-copilot/issues).
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
